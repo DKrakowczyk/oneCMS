@@ -663,9 +663,9 @@ $stmt->execute();
     {
         
         $stmt = $dbconnection->query('SELECT id, temat, mail, wiadomosc FROM contact');
-        
+        $counter = 1;
         foreach ($stmt as $row) {
-            echo '<tr><td>' . $row['id'] . '</td><td>' . $row['temat'] . '</td><td>' . $row['mail'] . '</td><td>' . $row['wiadomosc'] . '</td><td>
+            echo '<tr><td>' . $counter++ . '</td><td>' . $row['temat'] . '</td><td>' . $row['mail'] . '</td><td>' . $row['wiadomosc'] . '</td><td>
           <form method="POST">
           <input  type="hidden" type="text" name="id" value="' . $row['id'] . '">
           <button  type="submit" class="btn btn-outline-danger btn-sm">Skasuj</button></td></tr>

@@ -14,15 +14,20 @@ else{die('błąd krytyczny');}
         <div class="container-fluid" id="contents">
     <ol class="breadcrumb">
         <li class="breadcrumb-item" style="text-align:center !important;margin:auto;">
-          <a href="addmedia.php" >Biblioteka mediów </a> 
+          <a href="listmedia.php" >Biblioteka mediów </a> 
         </li>
     </ol>
 
    <hr> 
+   <div class="col-12">
+   <div class="row">
+  
     <?php 
     $fil->listFiles();
-    
     ?>
+  
+    </div>
+    </div>
       </div>
         </div>
 

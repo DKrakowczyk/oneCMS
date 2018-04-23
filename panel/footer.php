@@ -24,7 +24,7 @@
                     <div class="modal-body">Czy na pewno chcesz wylogować się z panelu administracyjnego?</div>
                     <div class="modal-footer">
                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Chcę zostać!</button>
-                        <a class="btn btn-primary" href="login.html">Wyloguj</a>
+                        <a class="btn btn-primary" href="../log/logout.php">Wyloguj</a>
                     </div>
                 </div>
             </div>
