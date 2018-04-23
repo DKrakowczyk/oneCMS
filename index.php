@@ -4,7 +4,7 @@
    $one = new onepage();
    try{$one->connect();if($one->connect()){$db=$one->connect();}}
    catch(Exception $e){header('Location:login.php');}if(isset($db)){$one->send_mails($db);}
-?>
+   ?>
 <!doctype html>
 <html lang="en">
    <head>
@@ -27,42 +27,42 @@
    <body>
       <a href="#hero"><button class="btn btn-outline-dark up"><i class="fas fa-angle-double-up"></i></button></a>
       <div class="container-fluid">
-      <section id="hero">
-         <div class="row">
-            <div class="col-12 hero" style="background-image:url('<?php $one->hero_image($db)?>');">
-               <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <a class="navbar-brand" href="index.php"><i class="fas fa-rocket"></i> oneCMS</a>
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin:auto; text-align:center;">
-                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                           <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#exp">Experience</span></a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#jobs">Jobs</span></a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#schools">Schools</span></a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#portfolio">Portfolio</span></a>
-                        </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="#contact">Contact</span></a>
-                        </li>
-                     </ul>
-                     <div >
-                      <?php $one->show_socials_front($db); ?>
-                    </div>
-                  </div>
-               </nav>
+         <section id="hero">
+            <div class="row">
+               <div class="col-12 hero" style="background-image:url('<?php $one->hero_image($db)?>');">
+                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                     <a class="navbar-brand" href="index.php"><i class="fas fa-rocket"></i> oneCMS</a>
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin:auto; text-align:center;">
+                        <ul class="navbar-nav mr-auto">
+                           <li class="nav-item">
+                              <a class="nav-link" href="#about">About</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#exp">Experience</span></a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#jobs">Jobs</span></a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#schools">Schools</span></a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#portfolio">Portfolio</span></a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" href="#contact">Contact</span></a>
+                           </li>
+                        </ul>
+                        <div >
+                           <?php $one->show_socials_front($db); ?>
+                        </div>
+                     </div>
+                  </nav>
+               </div>
             </div>
-         </div>
          </section>
          <section class="about" id="about">
             <div class="container">
@@ -143,8 +143,8 @@
                <?php $one->get_section_portfolio($db);?>
                <hr class="style1">
                <div class="row">
-               <?php $one->create_frontend_categories($db); ?>
-                </div>
+                  <?php $one->create_frontend_categories($db); ?>
+               </div>
                <div class ="row">
                   <div class="sort">
                      <button data-name='original-order' class="button">Original</button>
@@ -191,17 +191,17 @@
          </section>
          <section id="schools" class="schools">
             <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                 <hr class="hr__footer">
+               <div class="row">
+                  <div class="col-md-12">
+                     <hr class="hr__footer">
+                  </div>
+                  <div class="soc">
+                     <?php $one->show_socials_front($db); ?>
+                  </div>
                </div>
-               <div class="soc">
-                      <?php $one->show_socials_front($db); ?>
-                </div>
-            </div>
-            <div class="cpr">
-                <small class="cp">Copyright © Dawid Krakowczyk 2018</small>
-                </div>
+               <div class="cpr">
+                  <small class="cp">Copyright © Dawid Krakowczyk 2018</small>
+               </div>
             </div>
          </section>
       </div>
@@ -230,19 +230,18 @@
                  $('.sort button').removeClass('active');
                  $(this).addClass('active');
                })
-
-
+         
+         
       </script>
-<script>
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-        });
-    });
-});
-</script>
-    
+      <script>
+         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+         anchor.addEventListener('click', function (e) {
+         e.preventDefault();
+         document.querySelector(this.getAttribute('href')).scrollIntoView({
+         behavior: 'smooth'
+           });
+         });
+         });
+      </script>
    </body>
 </html>
