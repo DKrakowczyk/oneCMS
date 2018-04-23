@@ -21,20 +21,13 @@ $db=$one->connect();
   <meta name="description" content="">
   <meta name="author" content="">
   <title>Kokpit - DKrakowczyk</title>
-  <!-- Bootstrap core CSS-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom fonts for this template-->
-  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <!-- Custom styles for this template-->
+  <link href="../css/bootstrap/bootstrap.css" rel="stylesheet">
+  <link href="../css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-
-  <link href="../css/sb-admin.css" rel="stylesheet">
+  <link href="../css/sb-admin/sb-admin.css" rel="stylesheet">
 </head>
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
-
-
-  <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <a style="color:grey;" class="navbar-brand" href="cpanel.php"><i class="fas fa-rocket"></i> oneCMS</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -149,9 +142,7 @@ $db=$one->connect();
             <?php $one->info_mails($db);?>
           </div>
         </li>
-        
         <li class="nav-item">
-         
         </li>
         <li class="nav-item">
           <a class="nav-link" data-toggle="modal" data-target="#exampleModal">

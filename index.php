@@ -1,47 +1,27 @@
 <?php
    $onepage = 'themes/onepage.php';
-   
-   if(file_exists($onepage))
-   {
-     require $onepage;
-   }
-   
+   if(file_exists($onepage)){require $onepage;}
    $one = new onepage();
-   try
-   {
-     $one->connect();
-     if($one->connect())
-     {
-       $db=$one->connect();
-     }
-   }
-   catch(Exception $e)
-   {
-     header('Location:login.php');
-   }
-   if(isset($db))
-   {
-   $one->send_mails($db);
-   }
-   ?>
+   try{$one->connect();if($one->connect()){$db=$one->connect();}}
+   catch(Exception $e){header('Location:login.php');}if(isset($db)){$one->send_mails($db);}
+?>
 <!doctype html>
 <html lang="en">
    <head>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <link rel="icon" href="../../../../favicon.ico">
+      <meta name="description" content="portfolio,onepage">
+      <meta name="author" content="Dawid Krakowczyk">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-
-
       <title>Projekt zaliczeniowy Dawid Krakowczyk</title>
-      <!-- Bootstrap core CSS -->
-      <link href="css/bootstrap.css" rel="stylesheet">
-      <!-- Custom styles for this template -->
-      <link href="css/home.css" rel="stylesheet">
-      <link href="css/custom.css" rel="stylesheet">
+      <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+      <!--Main stylesheet-->
+      <link href="css/one/home.css" rel="stylesheet">
+      <!--User stylesheet-->
+      <link href="css/one/custom.css" rel="stylesheet">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+      <!--Portfolio-->
       <script src="js/isotope.js"></script>
    </head>
    <body>
@@ -217,9 +197,7 @@
                </div>
                <div class="soc">
                       <?php $one->show_socials_front($db); ?>
-
                 </div>
-                
             </div>
             <div class="cpr">
                 <small class="cp">Copyright © Dawid Krakowczyk 2018</small>
@@ -265,12 +243,6 @@
     });
 });
 </script>
-      <!-- Bootstrap core JavaScript
-         ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-      <script src="js/bootstrap.js"></script>
+    
    </body>
 </html>
