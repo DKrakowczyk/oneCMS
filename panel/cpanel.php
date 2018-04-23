@@ -36,7 +36,7 @@
          <div class="col-md-6">
             <div class="card text-center bg-dark text-white">
                <div class="card-header">
-               <i class="fa fa-fw fa-envelope"></i>&nbsp Wiadomości
+                  <i class="fa fa-fw fa-envelope"></i>&nbsp Wiadomości
                </div>
                <div class="card-body">
                   <h5 class="card-title">Skrzynka odbiorcza</h5>
@@ -49,10 +49,8 @@
             </div>
          </div>
       </div>
-      
       <hr>
       <h5> Edycja sekcji </h5>
-      
       <div class="row">
          <div class="col-md-3">
             <div class="card text-center bg-dark text-white">
@@ -62,7 +60,6 @@
                <div class="card-body">
                   <a href="hero.php" class="btn btn-outline-danger">Edytuj</a>
                </div>
-
             </div>
          </div>
          <div class="col-md-3">
@@ -73,7 +70,6 @@
                <div class="card-body">
                   <a href="about.php" class="btn btn-outline-danger">Edytuj</a>
                </div>
-
             </div>
          </div>
          <div class="col-md-3">
@@ -84,7 +80,6 @@
                <div class="card-body">
                   <a href="skills.php" class="btn btn-outline-danger">Edytuj</a>
                </div>
-
             </div>
          </div>
          <div class="col-md-3">
@@ -95,7 +90,6 @@
                <div class="card-body">
                   <a href="work.php" class="btn btn-outline-danger">Edytuj</a>
                </div>
-
             </div>
          </div>
       </div>
@@ -109,7 +103,6 @@
                <div class="card-body">
                   <a href="schools.php" class="btn btn-outline-danger">Edytuj</a>
                </div>
-
             </div>
          </div>
          <div class="col-md-4">
@@ -120,7 +113,6 @@
                <div class="card-body">
                   <a href="portfolio.php" class="btn btn-outline-danger">Edytuj</a>
                </div>
-
             </div>
          </div>
          <div class="col-md-4">
@@ -131,18 +123,16 @@
                <div class="card-body">
                   <a href="skills.php" class="btn btn-outline-danger">Edytuj</a>
                </div>
-
             </div>
          </div>
       </div>
       <hr>
       <h5> Edycja </h5>
       <div class="row">
-        
          <div class="col-md-12">
             <div class="card text-center bg-dark text-white">
                <div class="card-header">
-               <i class="fab fa-css3-alt"></i>&nbsp; CSS
+                  <i class="fab fa-css3-alt"></i>&nbsp; CSS
                </div>
                <div class="card-body">
                   <p class="card-text">Edytuj style CSS strony głównej</p>
@@ -154,10 +144,10 @@
       <hr>
       <h5> Social </h5>
       <div class="row">
-      <div class="col-md-12">
+         <div class="col-md-12">
             <div class="card text-center bg-dark text-white">
                <div class="card-header">
-               <i class="fab fa-facebook-messenger"></i>&nbsp; Social
+                  <i class="fab fa-facebook-messenger"></i>&nbsp; Social
                </div>
                <div class="card-body">
                   <p class="card-text">Edycja sekcji social strony głównej</p>

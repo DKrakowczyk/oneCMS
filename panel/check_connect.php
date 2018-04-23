@@ -1,57 +1,35 @@
 <?php
-   session_start();
-   if(isset($_SESSION["username"]))
-   {
-    $con = '../log/config.php';
-    if(file_exists($con)){ require $con;}
-    else{die('Nie udało się pobrać pliku konfiguracyjnego');}
+session_start();
 
-    try
+if (isset($_SESSION["username"]))
+{
+	$con = '../log/config.php';
+	if (file_exists($con))
+	{
+		require $con;
 
-    {
+	}
+	else
+	{
+		die('Nie udało się pobrać pliku konfiguracyjnego');
+	}
 
-    $pdo = new PDO("mysql:host=$serwer;dbname=$database", $usr, $passwd);
+	try
+	{
+		$pdo = new PDO("mysql:host=$serwer;dbname=$database", $usr, $passwd);
+	}
 
-
-
-    if($pdo)
-
-    {
-
-   
-
-    }
-
-    }
-
-    catch(PDOException $e)
-
-    {
-
-      if(isset($_SESSION))
-
-      {
-
-    session_destroy();  
-
-      
-
-    unset($_SESSION['login']);
-
-    unset($_SESSION['password']);
-
-      }
-
-    }
-
+	catch(PDOException $e)
+	{
+		if (isset($_SESSION))
+		{
+			header('Location:../log/logout.php');
+		}
+	}
 }
-
-else{
-
- header('Location:../index.php')  ; 
-
-
-
+else
+{
+	header('Location:../index.php');
 }
 
 ?>
