@@ -1,16 +1,21 @@
 /*Autor: Dawid Krakowczyk */
 
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
 
 *{
   margin: 0 auto;
   padding: 0;
 }
+body{
+
+  background: linear-gradient(120deg, #4e444a 0%, #121215 100%);
+}
 /* Style formularza */
 .login-back{
 
 height:100vh;
-background: linear-gradient(120deg, #84394b 0%, #121215 100%);
+
 }
 
 .login-box{
@@ -34,9 +39,9 @@ background: linear-gradient(120deg, #84394b 0%, #121215 100%);
 }
 
 .login-box:hover{
-  -webkit-box-shadow: 0px 2px 24px 0px rgba(0, 0, 0, 1);
--moz-box-shadow:    0px 2px 24px 0px rgba(0, 0, 0, 1);
-box-shadow:         0px 2px 24px 0px rgba(0, 0, 0, 1);
+  -webkit-box-shadow:  0px 2px 24px 0px rgba(0, 0, 0, 1);
+-moz-box-shadow:     0px 2px 24px 0px rgba(0, 0, 0, 1);
+box-shadow:          0px 2px 24px 0px rgba(0, 0, 0, 1);
 }
 
 .login-box > p{
@@ -49,7 +54,7 @@ box-shadow:         0px 2px 24px 0px rgba(0, 0, 0, 1);
 
 .form{
   position: relative;
-  margin-top:30px;
+  margin-top:-70px;
 
 
 }
@@ -62,7 +67,6 @@ box-shadow:         0px 2px 24px 0px rgba(0, 0, 0, 1);
     border: none;
     background: #262831;
     text-align: center;
-    text-transform: uppercase;
     font-family: 'Lato';
     color: white;
     outline:none;
@@ -80,8 +84,11 @@ box-shadow:         0px 2px 24px 0px rgba(0, 0, 0, 1);
   box-shadow:         inset 0px 1px 12px 0px rgba(0, 0, 0, 1);
 
 }
+.form input[type="text"]{
+  margin-top:15px;
+}
 .form input[type="password"]{
-  margin-top:10px;
+  margin-top:15px;
 }
 
 .form input[type="submit"]{
@@ -100,10 +107,11 @@ box-shadow:         0px 2px 24px 0px rgba(0, 0, 0, 1);
 }
 
 .cp{
-    margin-top: 70px;
+    margin-top: 50px;
 }
 .dk{
-  margin-top: -150px !important;
+  margin-top: -160px !important;
+  margin-bottm:10px;
   transform: scale(0.8);
   margin-left: -140px;
 }
@@ -121,3 +129,4 @@ color: #d8312a !important;
 .logo-top{
   transform:scale(0.9);
 }
+ 

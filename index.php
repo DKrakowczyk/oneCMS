@@ -2,8 +2,29 @@
    $onepage = 'themes/onepage.php';
    if(file_exists($onepage)){require $onepage;}
    $one = new onepage();
-   try{$one->connect();if($one->connect()){$db=$one->connect();}}
-   catch(Exception $e){header('Location:login.php');}if(isset($db)){$one->send_mails($db);}
+   $con = 'log/config.php';
+   if (file_exists($con))
+   {require $con;}
+   else
+   {die('Nie udało się pobrać pliku konfiguracyjnego');}
+   try{
+    if(isset($server) AND isset($database) AND isset ($usr) AND isset($passwd)){
+   $pdo = new PDO("mysql:host=$server;dbname=$database", $usr, $passwd);
+    }
+   else
+   {
+    header('Location:install/install.php');
+   }
+   if($pdo){$db = $pdo;}
+   }
+   catch(Exception $e)
+   {
+    if(is_dir('install'))
+    {
+        header('Location:install/install.php');
+    }
+   }
+   if(isset($db)){$one->send_mails($db);}
    ?>
 <!doctype html>
 <html lang="en">

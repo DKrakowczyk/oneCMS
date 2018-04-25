@@ -5,18 +5,12 @@ if (isset($_SESSION["username"]))
 {
 	$con = '../log/config.php';
 	if (file_exists($con))
-	{
-		require $con;
-
-	}
+	{require $con;}
 	else
-	{
-		die('Nie udało się pobrać pliku konfiguracyjnego');
-	}
-
+	{die('Nie udało się pobrać pliku konfiguracyjnego');}
 	try
 	{
-		$pdo = new PDO("mysql:host=$serwer;dbname=$database", $usr, $passwd);
+		$pdo = new PDO("mysql:host=$server;dbname=$database", $usr, $passwd);
 	}
 
 	catch(PDOException $e)

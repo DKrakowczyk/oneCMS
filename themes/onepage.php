@@ -10,7 +10,7 @@ class onepage
         $port     = '3306';
         $user     = 'dawido';
         $password = 'dawido';
-        $dbh      = new PDO('mysql:host=' . $serwer . ';dbname=' . $database . ';port=' . $port, $user, $password);
+         $dbh      = new PDO('mysql:host=' . $serwer . ';dbname=' . $database, $user, $password);
         
         return $dbh;
     }

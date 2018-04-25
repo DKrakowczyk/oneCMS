@@ -5,7 +5,20 @@
    
    $onepage = '../themes/onepage.php';
    if(file_exists($onepage)){require $onepage;$one = new onepage();}
-   $db=$one->connect();
+   
+   $cons = '../log/config.php';
+   if (file_exists($cons))
+   {require $cons;}
+   else
+   {die('Nie udało się pobrać pliku konfiguracyjnego');}
+   try{
+   $pdo = new PDO("mysql:host=$server;dbname=$database", $usr, $passwd);
+   if($pdo){$db = $pdo;}
+   }
+   catch(Exception $e)
+   {
+     die('Błąd krytyczny');
+   }
    
    ?>
 <!DOCTYPE html>
