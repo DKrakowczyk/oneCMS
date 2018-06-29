@@ -41,6 +41,7 @@
       <!--User stylesheet-->
       <link href="css/one/custom.css" rel="stylesheet">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="js/particles.js"></script>
       <script src="js/bootstrap.js"></script>
       <!--Portfolio-->
       <script src="js/isotope.js"></script>
@@ -50,9 +51,9 @@
       <div class="container-fluid">
          <section id="hero">
             <div class="row">
-               <div class="col-12 hero" style="background-image:url('<?php $one->hero_image($db)?>');">
+               <div id ="particles-js" class="col-12 ">
                   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                     <a class="navbar-brand" href="index.php"><i class="fas fa-rocket"></i> oneCMS</a>
+                     
                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
                      </button>
@@ -82,7 +83,10 @@
                         </div>
                      </div>
                   </nav>
-               </div>
+                  <div class="intro">
+                    <p>Dawid Krakowczyk</p>
+                  </div>
+               </div> 
             </div>
          </section>
          <section class="about" id="about">
@@ -226,6 +230,13 @@
             </div>
          </section>
       </div>
+
+      <script>
+      /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'js/particles.json', function() {
+  console.log('callback - particles.js config loaded');
+});
+      </script>
       <script>
          var $grid = $('.grid').isotope({
            itemSelector: '.grid-item',

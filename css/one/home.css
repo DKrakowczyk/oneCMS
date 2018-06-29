@@ -40,13 +40,21 @@
  .icon:hover{
      color: linear-gradient(45deg, #35394a 0%, #1f222e 100%);
 }
- .hero{
-     height: 100vh;
-     background-image: url('../assets/ss.jpg');
-     margin: auto;
-     background-size:100% 100%;
-     margin-top:0px;
+#particles-js{
+    background-color: #504f5c;
 }
+.intro{
+    margin: auto;
+    width: 30%;
+    background:rgba(255,255,255,0.8);
+    left:35%;
+    padding: 30px;
+    position: absolute;
+    top:200px;
+    z-index: 100000;
+    
+}
+
  .abt{
      height:100%;
      background: grey;

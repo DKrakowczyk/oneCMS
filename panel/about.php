@@ -16,7 +16,7 @@
    <div class="col-12">
       <form method="POST" id="update_about">
          <div class="form-group">
-            <label for="header">&nbsp&nbsp</i>Section header <code>&lth2&gt</code></label>
+            <label for="header">Section header <code>&lth2&gt</code></label>
             <input type="text" form="update_about" name ="header" class="form-control" id="header" value="<?php $one->section_about($db,'header');?>"/>
          </div>
          <div class="form-group">

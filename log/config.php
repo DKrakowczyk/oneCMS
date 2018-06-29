@@ -1,1 +1,1 @@
-<?php $server='';$database='';$usr='';$passwd='' ?>
+<?php $server='localhost';$database='portfolio';$usr='dawido';$passwd='dawido' ?>
