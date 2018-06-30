@@ -46,14 +46,14 @@
       <!--Portfolio-->
       <script src="js/isotope.js"></script>
    </head>
-   <body>
-      <a href="#hero"><button class="btn btn-outline-dark up"><i class="fas fa-angle-double-up"></i></button></a>
+   <body id="top">
+      <a href="#top"><button class="btn btn-outline-dark up"><i class="fas fa-angle-double-up"></i></button></a>
       <div class="container-fluid">
          <section id="hero">
             <div class="row">
                <div id ="particles-js" class="col-12 ">
-                  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                     
+                  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                  <a class="navbar-brand" href="index.php"><i class="fas fa-rocket"></i> oneCMS</a>
                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
                      </button>
@@ -83,9 +83,9 @@
                         </div>
                      </div>
                   </nav>
-                  <div class="intro">
-                    <p>Dawid Krakowczyk</p>
-                  </div>
+                  <img src="<?php $one->hero_image($db);?>" class="intro">
+                   
+                  </img>
                </div> 
             </div>
          </section>

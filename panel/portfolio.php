@@ -24,20 +24,20 @@
          </div>
          <div class="form-group">
             <label for="img_src">Image source <code>URL</code> </label>
-            <input type="text" name ="img_src" class="form-control" id="img_src" value="">
+            <input type="text" name ="img_src" class="form-control" id="img_src" value="" required>
          </div>
          <div class="form-group  form-inline">
             <div class="form-group">
                <label for="category">Category&nbsp; </label>
-               <input type="text" name ="category" class="form-control" id="category" value="">
+               <input type="text" name ="category" class="form-control" id="category" value="" required>
             </div>
             <div class="form-group">
                <label for="img_alt">&nbsp;Image alt&nbsp;</label>
-               <input type="text" name ="img_alt" class="form-control" id="img_alt" value="">
+               <input type="text" name ="img_alt" class="form-control" id="img_alt" value="" required>
             </div>
             <div class="form-group">
                <label for="img_button">&nbsp;&nbsp;&nbsp;Image button text&nbsp;</label>
-               <input type="text" name ="img_button" class="form-control" id="img_button" value="">
+               <input type="text" name ="img_button" class="form-control" id="img_button" value="" required>
             </div>
          </div>
          <button type="button" class="btn btn-outline-danger" data-toggle="modal" data-target="#exampleModalCenter">
@@ -65,15 +65,15 @@
          <hr>
          <div class="form-group">
             <label for="modal_src">Modal name</label>
-            <input type="text" name ="modal_src" class="form-control" id="modal_src" value="">
+            <input type="text" name ="modal_src" class="form-control" id="modal_src" value="" required>
          </div>
          <div class="form-group">
             <label for="modal_header">Modal header</label>
-            <input type="text" name ="modal_header" class="form-control" id="modal_header" value="">
+            <input type="text" name ="modal_header" class="form-control" id="modal_header" value="" required>
          </div>
          <div class="form-group">
             <label for="modal_img">Modal image </label>
-            <input type="text" name ="modal_img" class="form-control" id="modal_img" value="">
+            <input type="text" name ="modal_img" class="form-control" id="modal_img" value="" required>
          </div>
          <div class="form-group">
             <label for="modal_p">Paragraph<code>&ltp&gt</code> </label>
