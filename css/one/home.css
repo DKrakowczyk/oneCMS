@@ -41,7 +41,7 @@
      color: linear-gradient(45deg, #35394a 0%, #1f222e 100%);
 }
 #particles-js{
-    background-color: #504f5c;
+    background: linear-gradient(120deg, #84394b 0%, #121215 100%);
 }
 .intro{
     margin: auto;
@@ -52,9 +52,7 @@
     left:25%;
 }
 .bg-dark{
-    -webkit-box-shadow: 0px 5px 15px 0px rgba(50, 50, 50, 0.79);
--moz-box-shadow:    0px 5px 15px 0px rgba(50, 50, 50, 0.79);
-box-shadow:         0px 5px 15px 0px rgba(50, 50, 50, 0.79);
+
 background-color: #252836 !important;
 }
  .abt{

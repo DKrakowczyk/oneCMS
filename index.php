@@ -83,7 +83,7 @@
                         </div>
                      </div>
                   </nav>
-                  <img src="<?php $one->hero_image($db);?>" class="intro">
+                  <img src="http://localhost/oneCMS/uploads/oneCMS.png" class="intro">
                    
                   </img>
                </div> 
