@@ -1,1 +1,1 @@
-<?php $server='localhost';$database='one';$usr='dawid';$passwd='dawid' ?>
+<?php $server='remotemysql.com';$database='Rd5FJdRxdo';$usr='Rd5FJdRxdo';$passwd='H2aXgtvf7h' ?>
