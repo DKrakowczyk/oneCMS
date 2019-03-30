@@ -18,7 +18,9 @@ if (isset($_POST['pass'])) {
 
 if (isset($_POST['log']) && isset($_POST['pass'])) {
     try {
-        $pdo = new PDO("mysql:host=$serwer;dbname=$database", $user, $password);
+		//$pdo = new PDO("mysql:host=$serwer;dbname=$database", $user, $password);
+		// For heroku upload
+		$pdo = new PDO("mysql:host=remotemysql.com;dbname=Rd5FJdRxdo", $user, $password);
         if ($pdo) {
             session_start();
             $_SESSION['username'] = $_POST['log'];
