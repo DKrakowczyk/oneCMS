@@ -1,1 +1,0 @@
-<?php $server='remotemysql.com';$database='Rd5FJdRxdo';$usr='Rd5FJdRxdo';$passwd='H2aXgtvf7h' ?>
